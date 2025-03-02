@@ -1,0 +1,15 @@
+name: "Hi"
+
+on:
+  push:
+    branches: 'main'
+
+jobs:
+ job:
+  name: 'hi'
+  runs-on: 'ubuntu-latest'
+  steps:
+    - uses: actions/setup-java@v4.7.0
+      with: 
+          java-version: '17'
+        
